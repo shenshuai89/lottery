@@ -49,9 +49,51 @@
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	__webpack_require__(2);
+
+	__webpack_require__(3);
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 	"use strict";
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Test = function Test() {
+	    _classCallCheck(this, Test);
+
+	    this.text = "hello world!";
+	};
+
+	var test = new Test();
+	document.body.innerHTML = test.text;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	function test() {
+	    for (var i = 0; i < 3; i++) {
+	        console.log(i);
+	    }
+	    // console.log(i); 这个i访问不到
+	    for (var j = 0; j < 3; j++) {
+	        console.log(j);
+	    }
+	    console.log(j);
+	    var PI = 3.1415926;
+	    // PI = 6; 不可以重新赋值
+	    console.log(PI);
+	}
+	test();
 
 /***/ })
 /******/ ]);
